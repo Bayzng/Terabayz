@@ -101,14 +101,23 @@ function Navbar() {
                 <div className="border-t border-gray-200 px-4 py-6">
                   <a href="#" className="-m-2 flex items-center p-2">
                     <img
-                      src="img/indiaflag.png"
+                      src="https://etendard.com/media/1864/nigeria.png?width=570&height=570&bgcolor=e5e5e5"
                       alt=""
                       className="block h-auto w-5 flex-shrink-0"
                     />
                     <span className="ml-3 block text-base font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>NIGERIA</span>
-                    <span className="sr-only">, change currency</span>
                   </a>
                 </div>
+                
+                  {user ? <div className="flow-root">
+                    <a className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                      <h2 style={{textAlign: 'center', color: 'green'}}>Welcome Back</h2>
+                    </a>
+                  </div> : <div className="flow-root">
+                    <Link className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer" style={{ color: mode === 'dark' ? 'white' : '', }}>
+                      <h3 style={{textAlign: 'center', padding: '10px', color: 'red'}}>Kindly Create an Account and login to explore and have access to our product</h3>
+                    </Link>
+                  </div>}
               </Dialog.Panel>
             </Transition.Child>
           </div>
