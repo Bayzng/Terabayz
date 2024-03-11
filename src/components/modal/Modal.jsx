@@ -58,7 +58,9 @@ export default function Modal({ name, address, pincode, phoneNumber, setName, se
                                                 <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
 
                                                 <form className="space-y-4 md:space-y-6" action="#">
-                                                        <div>
+                                                    <div>Dear valued customer, our online payment integration is currently unavailable</div>
+                                                    <h3>Kindly pay through our current checkout</h3>
+                                                        {/* <div>
                                                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">Enter Full Name</label>
                                                             <input value={name} onChange={(e)=>setName(e.target.value)} type="name" name="name" id="name" className=" border outline-0 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-100" required />
                                                         </div>
@@ -73,10 +75,11 @@ export default function Modal({ name, address, pincode, phoneNumber, setName, se
                                                         <div>
                                                             <label htmlFor="mobileNumber" className="block mb-2 text-sm font-medium text-gray-900">Enter Mobile Number</label>
                                                             <input value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)} type="text" name="mobileNumber" id="mobileNumber" className=" border outline-0 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-100" required />
-                                                        </div>
+                                                        </div> */}
 
                                                     </form>
-                                                    <button onClick={()=>{buyNow(); closeModal()}} type="button" className="focus:outline-none w-full text-white bg-violet-600 hover:bg-violet-800  outline-0 font-medium rounded-lg text-sm px-5 py-2.5 ">Order Now</button>
+                                                    {/* <button onClick={()=>{buyNow(); closeModal()}} type="button" className="focus:outline-none w-full text-white bg-violet-600 hover:bg-violet-800  outline-0 font-medium rounded-lg text-sm px-5 py-2.5 ">Order Now</button> */}
+                                                    <button type="button" className="focus:outline-none w-full text-white bg-violet-600 hover:bg-violet-800  outline-0 font-medium rounded-lg text-sm px-5 py-2.5 "><a href="https://wa.me/8144796373">Payment Checkout</a></button>
 
                                                 </div>
                                             </div>

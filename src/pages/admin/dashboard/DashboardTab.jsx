@@ -105,7 +105,7 @@ function DashboardTab() {
                                                             {title}
                                                         </td>
                                                         <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
-                                                            ₹{price}
+                                                            #{price}
                                                         </td>
                                                         <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                             {category}
@@ -204,7 +204,7 @@ function DashboardTab() {
                                                 {title}
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
-                                                ₹{price}
+                                                #{price}
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                {category}
@@ -257,6 +257,9 @@ function DashboardTab() {
                                                 Email
                                             </th>
                                             <th scope="col" className="px-6 py-3">
+                                                Date
+                                            </th>
+                                            <th scope="col" className="px-6 py-3">
                                                 Uid
                                             </th>
                                            
@@ -275,6 +278,9 @@ function DashboardTab() {
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {email}
+                                            </td>
+                                            <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
+                                                {date}
                                             </td>
                                             <td className="px-6 py-4 text-black " style={{ color: mode === 'dark' ? 'white' : '' }}>
                                                 {uid}

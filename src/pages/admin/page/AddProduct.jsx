@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
+import { AiOutlinePlusSquare } from 'react-icons/ai'
 import myContext from '../../../context/data/myContext'
+
 
 function AddProduct() {
     const context = useContext(myContext);
@@ -30,14 +32,24 @@ function AddProduct() {
                         />
                     </div>
                     <div>
-                        <input type="text"
+                        <input 
+                            type="text"
                             value={products.imageUrl}
                             onChange={(e) => setProducts({ ...products, imageUrl: e.target.value })}
                             name='imageurl'
-                            className=' bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none'
+                            className='bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none'
                             placeholder='Product imageUrl'
                         />
                     </div>
+                    {/* <div>
+                        <input 
+                            type="file"
+                            onChange={(e) => setProducts({ ...products, imageUrl: e.target.files[0] })}
+                            name='imageurl'
+                            className='bg-gray-600 mb-4 px-2 py-2 w-full lg:w-[20em] rounded-lg text-white placeholder:text-gray-200 outline-none'
+                            placeholder='Product imageUrl'
+                        />
+                    </div> */}
                     <div>
                         <input type="text"
                             value={products.category}
